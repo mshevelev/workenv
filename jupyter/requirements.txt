@@ -1,0 +1,12 @@
+jupyterlab_execute_time
+jupyterlab_limit_output
+jupyterlab-skip-traceback
+jupyterlab_notify
+jupyterlab_latex
+jupyterlab-code-snippets
+jupyterlab-drawio
+jupyterlab-favorites
+jupyterlab-recents
+#jupyterlab-git
+#jupyterlab-search-replace
+#jupyter_bokeh
