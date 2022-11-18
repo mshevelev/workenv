@@ -1,0 +1,14 @@
+[user]
+	name = Mikhail Shevelev
+	email = shevelev.mikhail@gmail.com
+[core]
+  editor = vim
+  excludesfile = /home/mshevelev/.gitignore_global
+  autocrlf = input
+[push]
+  default = simple
+[alias]
+  st = status
+  plog = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[init]
+	defaultBranch = master

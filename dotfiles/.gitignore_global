@@ -1,0 +1,9 @@
+.ipynb_checkpoints
+*.sublime-project
+*.sublime-workspace
+.*.swp
+*.pyc
+.svn
+.idea
+.sw?
+*~
