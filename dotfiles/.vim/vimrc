@@ -62,3 +62,14 @@ set hlsearch
 
 " Set the commands to save in history default number is 20.
 set history=1000
+
+
+
+augroup XML
+    autocmd!
+    autocmd FileType xml let g:xml_syntax_folding=1
+    autocmd FileType xml setlocal foldmethod=syntax
+    autocmd FileType xml :syntax on
+    autocmd FileType xml :%foldopen!
+    " https://gist.github.com/lestoni/8c74da455cce3d36eb68
+augroup END
