@@ -3,7 +3,7 @@ jupyterlab_limit_output
 jupyterlab-skip-traceback
 jupyterlab_notify
 jupyterlab_latex
-jupyterlab-code-snippets
+jupyterlab-code-snippets==2.0.1
 jupyterlab-drawio
 jupyterlab-favorites
 jupyterlab-recents
