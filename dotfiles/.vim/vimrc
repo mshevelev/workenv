@@ -1,3 +1,14 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""               
+"               
+"               ██╗   ██╗██╗███╗   ███╗██████╗  ██████╗
+"               ██║   ██║██║████╗ ████║██╔══██╗██╔════╝
+"               ██║   ██║██║██╔████╔██║██████╔╝██║     
+"               ╚██╗ ██╔╝██║██║╚██╔╝██║██╔══██╗██║     
+"                ╚████╔╝ ██║██║ ╚═╝ ██║██║  ██║╚██████╗
+"                 ╚═══╝  ╚═╝╚═╝     ╚═╝╚═╝  ╚═╝ ╚═════╝
+"               
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -34,6 +45,8 @@ set expandtab
 " Do not save backup files.
 set nobackup
 
+" Do not let cursor scroll below or above N number of lines when scrolling.
+"set scrolloff=10
 
 " Do not wrap lines. Allow long lines to extend as far as the line goes.
 set nowrap
@@ -63,8 +76,38 @@ set hlsearch
 " Set the commands to save in history default number is 20.
 set history=1000
 
+" --- WILD MENU --- {{{
+" Enable auto completion menu after pressing TAB.
+set wildmenu
+
+" Make wildmenu behave like similar to Bash completion.
+set wildmode=list:longest
+
+" There are certain files that we would never want to edit with Vim.
+" Wildmenu will ignore files with these extensions.
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+" }}}
+
+" PLUGINS ---------------------------------------------------------------- {{{
+
+call plug#begin('~/.vim/plugged')
+
+  Plug 'preservim/nerdtree'
 
 
+
+call plug#end()
+
+" }}}
+
+" MAPPINGS --------------------------------------------------------------- {{{
+
+" Mappings code goes here.
+
+" }}}
+
+" --- XML ------------- {{{
 augroup XML
     autocmd!
     autocmd FileType xml let g:xml_syntax_folding=1
@@ -73,3 +116,29 @@ augroup XML
     autocmd FileType xml :%foldopen!
     " https://gist.github.com/lestoni/8c74da455cce3d36eb68
 augroup END
+" }}}
+
+" VIMSCRIPT -------------------------------------------------------------- {{{
+
+" This will enable code folding.
+" Use the marker method of folding.
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
+
+" More Vimscripts code goes here.
+
+" }}}
+
+" STATUS LINE ------------------------------------------------------------ {{{
+
+" Status bar code goes here.
+" }}}
+
+
+" Set the background tone.
+set background=dark
+
+" Set the color scheme.
+colorscheme molokai
