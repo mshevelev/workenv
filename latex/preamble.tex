@@ -9,6 +9,7 @@
 
 \usepackage{graphicx}
 \usepackage{xcolor}           % adds \textcolor
+\usepackage{colortbl}
 \usepackage{subcaption}
 \usepackage{hyperref}         % adds \autoref
 
@@ -26,6 +27,13 @@
 	left=20mm,
 	top=20mm,
 }
+
+
+%%%%%%%%%%%%%%%
+%% Aliases %%
+%%%%%%%%%%%%%%%
+\newcommand{\eps}{\epsilon}
+
 
 %%%%%%%%%%
 %% Sets %%
@@ -62,3 +70,18 @@
 \newcommand{\Gaussian}{\mathcal{N}}
 
 %\DeclareMathOperator{\Prob}{\mathbb{P}}  % expected value
+
+
+%%%%%%%%%%%%%%%%
+%% Complexity %%
+%%%%%%%%%%%%%%%%
+\newcommand{\bigO}{\mathcal{O}}
+
+
+%%%%%%%%%%%%%%%%%%
+%% Environments %%
+%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
