@@ -1,6 +1,23 @@
 [user]
 	name = Mikhail Shevelev
 	email = shevelev.mikhail@gmail.com
+[color]
+  ui = true
+[color "branch"]
+  current = yellow black
+  local = yellow
+  remote = magenta
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red
+  new = green
+  whitespace = white reverse
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+  branch = magenta
 [core]
   editor = vim
   excludesfile = /home/mshevelev/.gitignore_global
