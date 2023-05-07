@@ -1,0 +1,6 @@
+pdir2
+yfinance
+pytest
+snakeviz
+memory_profiler
+line_profiler

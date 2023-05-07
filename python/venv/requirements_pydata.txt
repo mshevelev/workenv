@@ -1,0 +1,16 @@
+numpy
+scipy
+pandas
+xarray
+matplotlib
+seaborn
+bokeh
+holoviews
+hvplot
+panel
+statsmodels
+sklearn
+cvxpy
+sktime
+networkx
+dask
