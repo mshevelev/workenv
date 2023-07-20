@@ -1,0 +1,211 @@
+\documentclass[unicode,a4paper,10pt]{article}
+\textwidth=16cm
+\textheight=25cm
+\oddsidemargin=0mm
+\topmargin=-10mm
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{hyphenat}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+% \usepackage[big]{layaureo} 				%better formatting of the A4 page
+% \usepackage{fullpage}
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%\setmainfont[SmallCapsFont = Linux Libertine O C]{Linux Libertine O}
+\setmainfont[Ligatures=TeX,Numbers=OldStyle]{LinLibertine_R.otf}
+
+%\setmainfont[SmallCapsFont = FreeSans]{FreeSans}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\raggedbottom}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{
+\begin{flushright}
+{\Large Mikhail Shevelev}\\
+\medskip	%\bigskip
+{\normalsize
+\begin{tabular}{rr}
+    +1(203)550-33-61\\
+    \href{mailto:shevelev.mikhail@gmail.com}{shevelev.mikhail@gmail.com}
+\end{tabular}
+}
+\end{flushright}
+\par}
+
+%--------------------SECTIONS-----------------------------------
+%%Section: Personal Data
+%\section{Личные данные}
+
+%\begin{tabular}{rl}
+%    \textsc{Дата рождения:} & 1 января 1900 \\
+%    \textsc{phone:}     & +7(909)949-39-17\\
+%    \textsc{email:}     & \href{mailto:shevelev.mikhail@gmail.com}{shevelev.mikhail@gmail.com}
+%\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{rl}
+2010-2012& \textbf{Higher School of Economics}, Faculty of Economics, \textbf{Master of Arts}\\
+& Master's Program <<Finance>>\\% (\textbf{целевая группа Сбербанка})\\
+& Specialized in \textit{Options Pricing Models}, \textit{Portfolio Management Theory} \\
+%& Тема курсовой работы: <<Option Pricing Models>> \\
+%& Тема магистерской работы: <<Сравнение эффективности опционных стратегий хеджирования>> \\
+%2008-2009& \textbf{Lomonosov Moscow State University}, Faculty of Mechanics and Mathematics, \textbf{postgraduate student}\\
+%& Department of Computational Mathematics \\
+%& Specialized in \textit{Distributed computing} and \textit{GRID-systems} \\
+2003-2008& \textbf{Lomonosov Moscow State University}, Faculty of Mechanics and Mathematics, \textbf{Specialist}\\
+& Department of Computational Mathematics \\
+& Specialized in \textit{Distributed computing}, \textit{GRID-systems}, Numerical Methods \\
+\end{tabular}
+
+\section{Additional education}
+\begin{itemize}
+	\item \href{https://smiles.skoltech.ru/mlss2019}{2019 Machine Learning Summer School (MLSS Moscow)}
+	\item \href{https://courses.edx.org/dashboard/programs/fa06b9c5-fe2b-41d8-a8c1-1bfd9c0d7b07/}{MitX MicroMasters "Statistics and Data Science"} (completed 4 courses, Capstone Exam in Fall 2023)
+\end{itemize}
+%Section: Work Experience at the top
+\section{Experience}
+\begin{tabular}{r p{13cm}}
+
+ \emph{\textsc{June 2014}} & \textbf{\href{https://www.worldquant.com/}{WorldQuant, LLC}, Vice President, UBER Team} \\
+\textsc{now}
+&\footnotesize{Developed an UBER Trade Module that transforms a Forecast into Strategy by performing multiperiod P\&L-Impact optimization and Partial Risk Factor Neutralization.}\\
+&\footnotesize{Developed and operated several Strategies on Equity Markets.}\\
+&\footnotesize{Implemented approximation of UBER Impact Model for daily Strategies.}\\
+&\footnotesize{Implemented production version of UBER Risk Model.}\\
+&\footnotesize{Developed various tools for Portfolio Managers (e.g. UBER Simulator) and Alpha Researchers.}\\
+&\footnotesize{Supervised a small team of Researchers on Machine Research.}\\
+&\footnotesize{Managed <<MMlib>> and <<CAT>> Projects.}\\
+
+ \emph{\textsc{December 2012}} & \textbf{\href{https://www.worldquant.com/}{WorldQuant Research (Eurasia) LLC}, Quantitative Researcher} \\
+\textsc{May 2014}
+&\footnotesize{Researched daily and intraday Equity Alphas.}\\
+&\footnotesize{Developed <<MMLib>> Expression Library for HUMAN and MACHINE Alpha Research (used by $\sim$20 Researchers).}\\
+&\footnotesize{Developed a working prototype of a framework for MACHINE Alpha Research later used by two Teams in Russia.}\\
+&\footnotesize{Received 5 monthly and quarterly awards (e.g. Best Alpha Award, Unique Alpha Award, Best Rookie Award).}\\
+
+
+ \emph{\textsc{October 2011}} & \textbf{\href{http://www.rambler.ru}{Rambler}, Technical Leader of <<User Model>> Group / Researcher} \\
+\textsc{December 2012}
+&\footnotesize{Conducted research and development of machine learning algorithms in the scope of <<User Model>> project.}\\
+&\footnotesize{Provided production quality implementation of machine learning algorithms using Hadoop and Hive.}\\
+&\footnotesize{Developed a news-recommendation system at <<\href{http://news.rambler.ru}{Rambler News}>>.}\\
+&\footnotesize{Implemented an algorithm for gender classification of Internet users based on anonymized Web browsing history.}\\
+&\footnotesize{Performed cluster analysis of Internet users to extract their primary interests.}\\
+
+
+ \emph{\textsc{May 2009}} & \textbf{\href{http://www.tsys.com}{TSYS Inc}, Senior Analyst of Authorization and Cryptographic systems / Software Developer} \\
+\textsc{October 2011}
+&\footnotesize{Developed a TCP-server application managing a large network of ATMs.} \\
+&\footnotesize{Developed an HSM management module for encryption/decryption of payment card transactions.} \\
+%&\footnotesize{Project leader activities during installations/upgrades at \href{http://www.tfskok.pl/}{TF SKOK SA}, 
+%				\href{http://privatbank.ua/}{Privat Bank}, \href{http://www.platina.ru/}{Platina Bank}, 
+%				on-site installation of NCrypt at \href{http://www.unb.com}{UNB} (Abu Dhabi)}\\
+
+% \emph{\textsc{May 2009}} & \textbf{\href{http://www.tsys.com}{TSYS Inc}, programmer-analyst of authorization and cryptographic systems} \\
+%\textsc{February 2011}
+%&\footnotesize{Successfully completed the development of stable versions of ATM Controller, NCRYPT and Web ATM Device Monitor products, 
+%						participated in on-site installations at Unicredit Bank and Moscow Credit Bank} \\
+%&\footnotesize{Successfully supported VISA VSDC and Mastercard MCHIP certifications at Moscow Credit Bank} \\
+ 
+ \emph{\textsc{July 2008}} & \textbf{\href{http://www.imec.msu.ru/}{Institute of Mechanics (Lomonosov Moscow State University)}, Junior Researcher} \\
+\textsc{April 2009}
+&\footnotesize{Proposed and implemented a framework for development of distributed GRID applications.}\\
+&\footnotesize{Implemented distributed algorithms to solve some real-life problems of mechanics and cryptography using the above mentioned framework.}\\
+&\footnotesize{Two articles have been published following research.}\\ 
+%&\footnotesize{Maintanainance of experimental GRID-system and research in distributed computing} \\
+\multicolumn{2}{c}{} 
+\end{tabular}
+
+\section{Areas of Expertise}
+\textbf{Programming}: distributed computing, fault-tolerant systems, data structures and algorithms,  large scale data processing, object-oriented programming, functional programming\\
+\textbf{Mathematics}: numerical methods, statistics, machine learning\\
+%\textbf{Payment card industry}: acquiring, issuing, ATM communication protocol, HSMs, cryptography\\
+\textbf{Finance}: portfolio management theory, options pricing models \\
+
+%\section{Key Skills}
+%\textbf{Distributed Computing}: MapReduce (Hadoop, Hive), Grid-computing (Globus Toolkit), POSIX threads, MPI\\
+%\textbf{Programming languages}: Python, С++, Haskell, Oracle PL SQL, bash, sed, awk\\
+%\textbf{Mathematical and statistical packages}: R, Octave, Eviews, Stata, MS Excel\\
+%\textbf{DBMS}: Redis, Berkley DB, Oracle, MySQL, SQLite\\
+%\textbf{OS}: Linux, Windows
+%\textbf{Misc. tools}: MS Excel, MS Word, MS Project, MS Visio, JIRA, Google Docs, LaTeX.
+ 
+%%Section: Languages
+%\section{Foreign Languages}
+%%\begin{tabular}{rl}
+%\textsc{English:} fluent
+%%\end{tabular}
+
+\section{Publications}
+1. E.V.~Shchepin, M.V.~Shevelev, N.E.~Shchepin (2003), "On topology of the number 64",
+\textit{Chebyshev collection, v.4, i.4, pp. 153-172}\\
+\href{http://www.mi.ras.ru/~scepin/64s.pdf}{http://www.mi.ras.ru/~scepin/64s.pdf}\\
+\href{http://tsput.ru/res/math/cheb/attachments/127_chepin.rar}{http://tsput.ru/res/math/cheb/attachments/127\_chepin.rar}
+
+2. Vasenin V.A., Inyukhin A.V., Shevelev M.V. (2009), "Ideas, Solutions, and Current State of the Grid Computing Testbed", 
+\textit{application to "Informational technologies" №7/2009}\\
+\href{http://novtex.ru/IT/it2009/number07\_pril.htm}{http://novtex.ru/IT/it2009/number07\_pril.htm}
+
+3. Vasenin V.A., Inyukhin A.V., Shevelev M.V. (2010), "A fragment of geographically distributed data-processing environment based on the methodology of GRID", 
+\textit{"Informational technologies"\ №1/2010, pp. 63-64}\\
+\href{http://elibrary.ru/item.asp?id=13008717}{http://elibrary.ru/item.asp?id=13008717}
+
+\section{Additional Information}
+Prizewinner of several conferences and competitions in mathematics and programming:
+\begin{itemize}
+\item International online contest "ICFP Programming contest 2009"
+\item International conference "Third Annual Kolmogorov readings -- 2003", Moscow, Russia
+\item International school conference "Third Kharitonov readings -- 2003", Sarov, Russia
+\item Regional mathematical olympiad "Lomonosov -- 2003", Moscow
+\end{itemize}
+
+%\section{Направления Сбербанка, представляющие наибольший интерес}
+%Производные финансовые инструменты, quantitative analyst, управление инвестиционным портфелем, риск-менеджмент.
+
+%\section{Recomendations}
+%\begin{tabular}{lll}
+%A.N.~Burenin& MGIMO, prof., Head of Stock Market Department& \href{mailto:anburenin@mail.ru}{anburenin@mail.ru} \\
+%M.V.~Teslenko& TSYS, head of ATM Controller department & \href{mailto:maxim.teslenko@ctl.com}{maxim.teslenko@ctl.com}
+%\end{tabular}
+
+\end{document}
