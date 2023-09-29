@@ -8,6 +8,7 @@ bokeh
 holoviews
 hvplot
 panel
+datashader
 statsmodels
 sklearn
 cvxpy
