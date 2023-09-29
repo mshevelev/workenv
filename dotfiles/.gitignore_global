@@ -7,3 +7,5 @@
 .idea
 .sw?
 *~
+*.synctex.gz
+*.aux
