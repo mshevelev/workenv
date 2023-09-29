@@ -5,7 +5,7 @@
 *.pyc
 .svn
 .idea
-.sw?
+.*.sw?
 *~
 *.synctex.gz
 *.aux
