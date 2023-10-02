@@ -31,6 +31,31 @@
 	top=20mm,
 }
 
+%% vertical space between items in itemize
+\setlist[itemize]{itemsep=-2pt}
+%% bullet points
+\setlist[itemize,1]{label=$\bullet$}
+\setlist[itemize,2]{label=$\circ$}
+\setlist[itemize,3]{label=$\diamond$}
+
+
+
+
+%%%%%%%%%%%
+%% Boxes %%
+%%%%%%%%%%%
+%\newcommand{\mybox}[1]{\fbox{#1}}
+\newcommand{\boxedtext}[1]{\fbox{\begin{minipage}{\linewidth}#1\end{minipage}}}
+
+
+
+%%%%%%%%%%%
+%% Fonts %%
+%%%%%%%%%%%
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\orange}[1]{\textcolor{orange}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+
 
 %%%%%%%%%%%%%%%
 %% Aliases %%
@@ -71,6 +96,8 @@
 %%%%%%%%%%%%%% %%
 %% Probability %%
 %%%%%%%%%%%%%%%%%
+\DeclareMathOperator{\E}{\mathbb{E}}      % expected value
+\DeclareMathOperator{\D}{\mathbb{D}}      % variance
 \DeclareMathOperator{\EX}{\mathbb{E}}      % expected value
 \DeclareMathOperator*{\Cov}{\mathbb{C}ov\mathbb{M}}
 \newcommand{\Prob}{\mathbb{P}}
