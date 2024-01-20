@@ -1,0 +1,18 @@
+name: pydata
+dependencies:
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - sklearn
+  - conda-forge::xarray
+  - conda-forge::dask
+  - bokeh
+  - pyviz_comms
+  - panel
+  - pyviz::holoviews
+  - pip:
+    - pdir2
+    - polars
+    - duckdb
+
