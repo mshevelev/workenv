@@ -3,15 +3,15 @@ channels:
   - conda-forge
   - pyviz
 dependencies:
-  - python>=3.12
+  - python
   - pip
   - numpy
   - scipy
   - pandas
-  - conda-forge::scikit-learn
+#  - conda-forge::scikit-learn
   - conda-forge::xarray
-  - conda-forge::dask
-  - conda-forge::jupyterlab
+#  - conda-forge::dask
+#  - conda-forge::jupyterlab
   - pyviz_comms
   - bokeh
   - pyviz::holoviews
