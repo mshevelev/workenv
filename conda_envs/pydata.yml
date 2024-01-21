@@ -8,18 +8,19 @@ dependencies:
   - numpy
   - scipy
   - pandas
-#  - conda-forge::scikit-learn
+  - conda-forge::scikit-learn
   - conda-forge::xarray
-#  - conda-forge::dask
-#  - conda-forge::jupyterlab
+  - conda-forge::dask
+  - conda-forge::jupyterlab
   - pyviz_comms
   - bokeh
   - pyviz::holoviews
   - panel
   - hvplot
   - numba
+  - conda-forge::snakeviz
   - pip:
     - pdir2
     - polars
-      #    - duckdb
+    - duckdb
 
