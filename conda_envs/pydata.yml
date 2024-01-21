@@ -1,18 +1,25 @@
 name: pydata
+channels:
+  - conda-forge
+  - pyviz
 dependencies:
+  - python>=3.12
   - pip
   - numpy
   - scipy
   - pandas
-  - sklearn
+  - conda-forge::scikit-learn
   - conda-forge::xarray
   - conda-forge::dask
-  - bokeh
+  - conda-forge::jupyterlab
   - pyviz_comms
-  - panel
+  - bokeh
   - pyviz::holoviews
+  - panel
+  - hvplot
+  - numba
   - pip:
     - pdir2
     - polars
-    - duckdb
+      #    - duckdb
 
