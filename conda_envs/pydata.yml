@@ -17,6 +17,8 @@ dependencies:
   - panel
   - hvplot
   - numba
+  - conda-forge::memory_profiler
+  - conda-forge::line_profiler
   - conda-forge::snakeviz
   - conda-forge::jupyterlab
   - conda-forge::python-lsp-server
