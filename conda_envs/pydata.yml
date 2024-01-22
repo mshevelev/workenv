@@ -11,7 +11,6 @@ dependencies:
   - conda-forge::scikit-learn
   - conda-forge::xarray
   - conda-forge::dask
-  - conda-forge::jupyterlab
   - pyviz_comms
   - bokeh
   - pyviz::holoviews
@@ -19,6 +18,9 @@ dependencies:
   - hvplot
   - numba
   - conda-forge::snakeviz
+  - conda-forge::jupyterlab
+  - conda-forge::python-lsp-server
+  - conda-forge::jedi-language-server
   - pip:
     - pdir2
     - polars
