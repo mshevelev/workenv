@@ -8,6 +8,7 @@ dependencies:
   - numpy
   - scipy
   - pandas
+  - sqlalchemy
   - conda-forge::scikit-learn
   - conda-forge::xarray
   - conda-forge::dask
@@ -17,6 +18,10 @@ dependencies:
   - panel
   - hvplot
   - numba
+  - bottleneck
+  - numexpr
+  - statsmodels
+  - datashader
   - conda-forge::memory_profiler
   - conda-forge::line_profiler
   - conda-forge::snakeviz
