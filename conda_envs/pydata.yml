@@ -18,6 +18,8 @@ dependencies:
   - panel
   - hvplot
   - numba
+  - bottleneck
+  - numexpr
   - statsmodels
   - datashader
   - conda-forge::memory_profiler
