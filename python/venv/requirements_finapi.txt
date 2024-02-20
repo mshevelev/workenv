@@ -1,0 +1,2 @@
+sec-api            # 13F, etc
+nasdaq-data-link   # former quandl, https://github.com/Nasdaq/data-link-python
