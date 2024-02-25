@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - pyviz
 dependencies:
-  - python
+  - python<3.12
   - pip
   - numpy
   - scipy
@@ -25,7 +25,8 @@ dependencies:
   - conda-forge::memory_profiler
   - conda-forge::line_profiler
   - conda-forge::snakeviz
-  - conda-forge::jupyterlab
+  - ipython
+  - jupyterlab
   - conda-forge::python-lsp-server
   - conda-forge::jedi-language-server
   - pip:
