@@ -8,19 +8,23 @@ dependencies:
   - numpy
   - scipy
   - pandas
+  - statsmodels
+  - matplotlib
+  - seaborn
   - sqlalchemy
   - conda-forge::scikit-learn
   - conda-forge::xarray
   - conda-forge::dask
   - pyviz_comms
   - bokeh
-  - pyviz::holoviews
+  - jupyter_bokeh
+  - holoviews
   - panel
+  - pyviz_comms
   - hvplot
   - numba
   - bottleneck
   - numexpr
-  - statsmodels
   - datashader
   - conda-forge::memory_profiler
   - conda-forge::line_profiler
