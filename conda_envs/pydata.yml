@@ -33,4 +33,5 @@ dependencies:
     - pdir2
     - polars
     - duckdb
+    - -r jupyter/jupyterlab_requirements.txt
 
