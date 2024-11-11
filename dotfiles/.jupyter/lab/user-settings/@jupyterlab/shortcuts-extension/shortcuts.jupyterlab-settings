@@ -273,6 +273,14 @@
             "args": {}
         },
         {
+            "command": "notebook:insert-text",
+            "keys": ["Ctrl Alt E"],
+            "args": {
+                "text": "\\begin{align*}\n\n\\end{align*}"
+            },
+            "selector": ".jp-Notebook.jp-mod-editMode"
+        },
+        {
             "command": "drawio:command/collapse",
             "keys": [
                 "Ctrl+Home"
@@ -1131,6 +1139,13 @@
             ],
             "args": {},
             "command": "notebook:restart-and-run-to-selected",
+            "selector": ".jp-Notebook:focus"
+        },
+        {
+            "keys": [
+                "Ctrl Alt 0"
+            ],
+            "command": "notebook:clear-all-cell-outputs",
             "selector": ".jp-Notebook:focus"
         },
         {
