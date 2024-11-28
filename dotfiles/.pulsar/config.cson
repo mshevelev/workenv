@@ -1,3 +1,8 @@
 "*":
+  core:
+    projectHome: "/home/mshevelev/git"
+  editor:
+    preferredLineLength: 120
+    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "48dadbd0-b88e-4f55-b5eb-553071eeeba3"
