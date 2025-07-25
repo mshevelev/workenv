@@ -2,6 +2,7 @@
   core:
     projectHome: "/home/mshevelev/git"
   editor:
+    fontSize: 20
     preferredLineLength: 120
     softWrapAtPreferredLineLength: true
   "exception-reporting":
