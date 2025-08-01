@@ -273,12 +273,12 @@
             "args": {}
         },
         {
-            "command": "notebook:insert-text",
-            "keys": ["Ctrl Alt E"],
+            "command": "apputils:insert-text",
+            "keys": ["Ctrl Shift Y"],
             "args": {
                 "text": "\\begin{align*}\n\n\\end{align*}"
             },
-            "selector": ".jp-Notebook.jp-mod-editMode"
+            "selector": ".jp-Notebook.jp-mod-editMode[data-cell-type=\"markdown\"]"
         },
         {
             "command": "drawio:command/collapse",
