@@ -12,33 +12,32 @@ dependencies:
   - matplotlib
   - seaborn
   - sqlalchemy
-  - conda-forge::scikit-learn
-  - conda-forge::xarray
-  - conda-forge::dask
+  - scikit-learn
+  - xarray
+  - dask
   - pyviz_comms
   - bokeh
   - jupyter_bokeh
   - holoviews
   - panel
-  - pyviz_comms
   - hvplot
   - numba
   - pytest
   - bottleneck
   - numexpr
   - datashader
-  - conda-forge::memory_profiler
-  - conda-forge::line_profiler
-  - conda-forge::snakeviz
+  - memory_profiler
+  - line_profiler
+  - snakeviz
   - ipython
   - jupyterlab
-  - conda-forge::python-lsp-server
-  - conda-forge::jedi-language-server
+  - python-lsp-server
+  - jedi-language-server
+  - polars
+  - duckdb
+  - ruff
+  - uv
   - pip:
     - pdir2
-    - polars
-    - duckdb
-    - uv
-    - ruff
     - -r jupyter/jupyterlab_requirements.txt
 
