@@ -23,6 +23,7 @@ dependencies:
   - pyviz_comms
   - hvplot
   - numba
+  - pytest
   - bottleneck
   - numexpr
   - datashader
@@ -37,5 +38,7 @@ dependencies:
     - pdir2
     - polars
     - duckdb
+    - uv
+    - ruff
     - -r jupyter/jupyterlab_requirements.txt
 
